@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".ThanksActivity">
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Successful!"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your room has been reserved!"
+            android:textStyle="bold"
+            android:textSize="20sp">
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="100dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/gratefulText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Have a great stay!\n     Thank You"
+                android:textSize="30sp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/backToHomePage"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLick here to Go back to home page"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/buttons_rounded">
+
+
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>

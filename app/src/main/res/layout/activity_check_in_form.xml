@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckInForm">
+
+
+
+    <LinearLayout
+        android:layout_width="366dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="16dp"
+                android:id="@+id/checkInDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Choose check in date"
+                android:inputType="date">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/checkInDatePickerB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@android:drawable/ic_menu_day"
+                android:background="@android:color/transparent"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="16dp"
+                android:id="@+id/checkOutDate"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Choose check out date"
+                android:inputType="date">
+            </EditText>
+            <ImageButton
+                android:id="@+id/checkOutDatePickerB"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@android:drawable/ic_menu_day"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/noOfRooms"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Number of rooms"
+            android:inputType="number">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+       <Button
+           android:id="@+id/confirmB"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Confirm"
+           android:textColor="@color/colorPrimaryDark"
+           android:background="@drawable/buttons_rounded">
+       </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

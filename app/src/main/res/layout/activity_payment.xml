@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount of Rs.  will be deducted from your account."
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Please enter your card details \nbelow">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:hint="Enter your card number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="16">
+        </EditText>
+        <EditText
+            android:id="@+id/validThru"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valid Thru(year)"
+            android:inputType="number"
+            android:maxLength="4">
+        </EditText>
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLength="3">
+        </EditText>
+        <EditText
+            android:id="@+id/cardHolderName"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Holder Name"
+            android:inputType="textPersonName">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/makePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="make payment"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/buttons_rounded">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

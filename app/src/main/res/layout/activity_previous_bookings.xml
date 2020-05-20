@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviousBookingsActivity"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="These are your previous bookings : \n\n"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/previousBookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
